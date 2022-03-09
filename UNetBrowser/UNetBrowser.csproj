@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Product>Unturned Net Method Browser</Product>
+    <Description>A tool to browse through Unturned's net methods.</Description>
+    <Copyright>ShimmyMySherbet</Copyright>
+    <ApplicationIcon>336-3369310_icon-panel-rpc-group.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+</Project>
