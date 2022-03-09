@@ -1,0 +1,2802 @@
+[
+  {
+    "DeclaringType": "SDG.Unturned.Assets",
+    "SendHandle": "SendKickForInvalidGuid",
+    "Handler": "ReceiveKickForInvalidGuid",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "Guid guid"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.Assets",
+    "SendHandle": "SendKickForHashMismatch",
+    "Handler": "ReceiveKickForHashMismatch",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "Guid guid, String serverName, String serverFriendlyName, Byte[] serverHash"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableBed",
+    "SendHandle": "SendClaim",
+    "Handler": "ReceiveClaim",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "CSteamID newOwner"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableBed",
+    "SendHandle": "SendClaimRequest",
+    "Handler": "ReceiveClaimRequest",
+    "SentBy": "Client",
+    "LegacyName": null,
+    "Parameters": "ServerInvocationContext& context"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableDoor",
+    "SendHandle": "SendOpen",
+    "Handler": "ReceiveOpen",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "Boolean newOpen"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableDoor",
+    "SendHandle": "SendToggleRequest",
+    "Handler": "ReceiveToggleRequest",
+    "SentBy": "Client",
+    "LegacyName": null,
+    "Parameters": "ServerInvocationContext& context, Boolean desiredOpen"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableFarm",
+    "SendHandle": "SendPlanted",
+    "Handler": "ReceivePlanted",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "UInt32 newPlanted"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableFarm",
+    "SendHandle": "SendHarvestRequest",
+    "Handler": "ReceiveHarvestRequest",
+    "SentBy": "Client",
+    "LegacyName": null,
+    "Parameters": "ServerInvocationContext& context"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableFire",
+    "SendHandle": "SendLit",
+    "Handler": "ReceiveLit",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "Boolean newLit"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableFire",
+    "SendHandle": "SendToggleRequest",
+    "Handler": "ReceiveToggleRequest",
+    "SentBy": "Client",
+    "LegacyName": null,
+    "Parameters": "ServerInvocationContext& context, Boolean desiredLit"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableGenerator",
+    "SendHandle": "SendFuel",
+    "Handler": "ReceiveFuel",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "UInt16 newFuel"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableGenerator",
+    "SendHandle": "SendPowered",
+    "Handler": "ReceivePowered",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "Boolean newPowered"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableGenerator",
+    "SendHandle": "SendToggleRequest",
+    "Handler": "ReceiveToggleRequest",
+    "SentBy": "Client",
+    "LegacyName": null,
+    "Parameters": "ServerInvocationContext& context, Boolean desiredPowered"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableLibrary",
+    "SendHandle": "SendAmount",
+    "Handler": "ReceiveAmount",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "UInt32 newAmount"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableLibrary",
+    "SendHandle": "SendTransferLibraryRequest",
+    "Handler": "ReceiveTransferLibraryRequest",
+    "SentBy": "Client",
+    "LegacyName": null,
+    "Parameters": "ServerInvocationContext& context, Byte transaction, UInt32 delta"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableMannequin",
+    "SendHandle": "SendPose",
+    "Handler": "ReceivePose",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "Byte poseComp"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableMannequin",
+    "SendHandle": "SendPoseRequest",
+    "Handler": "ReceivePoseRequest",
+    "SentBy": "Client",
+    "LegacyName": null,
+    "Parameters": "ServerInvocationContext& context, Byte poseComp"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableMannequin",
+    "SendHandle": "SendUpdate",
+    "Handler": "ReceiveUpdate",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "Byte[] state"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableMannequin",
+    "SendHandle": "SendUpdateRequest",
+    "Handler": "ReceiveUpdateRequest",
+    "SentBy": "Client",
+    "LegacyName": null,
+    "Parameters": "ServerInvocationContext& context, EMannequinUpdateMode updateMode"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableOil",
+    "SendHandle": "SendFuel",
+    "Handler": "ReceiveFuel",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "UInt16 newFuel"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableOven",
+    "SendHandle": "SendLit",
+    "Handler": "ReceiveLit",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "Boolean newLit"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableOven",
+    "SendHandle": "SendToggleRequest",
+    "Handler": "ReceiveToggleRequest",
+    "SentBy": "Client",
+    "LegacyName": null,
+    "Parameters": "ServerInvocationContext& context, Boolean desiredLit"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableOxygenator",
+    "SendHandle": "SendPowered",
+    "Handler": "ReceivePowered",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "Boolean newPowered"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableOxygenator",
+    "SendHandle": "SendToggleRequest",
+    "Handler": "ReceiveToggleRequest",
+    "SentBy": "Client",
+    "LegacyName": null,
+    "Parameters": "ServerInvocationContext& context, Boolean desiredPowered"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableRainBarrel",
+    "SendHandle": "SendFull",
+    "Handler": "ReceiveFull",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "Boolean newFull"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableSafezone",
+    "SendHandle": "SendPowered",
+    "Handler": "ReceivePowered",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "Boolean newPowered"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableSafezone",
+    "SendHandle": "SendToggleRequest",
+    "Handler": "ReceiveToggleRequest",
+    "SentBy": "Client",
+    "LegacyName": null,
+    "Parameters": "ServerInvocationContext& context, Boolean desiredPowered"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableSentry",
+    "SendHandle": "SendShoot",
+    "Handler": "ReceiveShoot",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableSentry",
+    "SendHandle": "SendAlert",
+    "Handler": "ReceiveAlert",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "Byte yaw, Byte pitch"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableSign",
+    "SendHandle": "SendChangeText",
+    "Handler": "ReceiveChangeText",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "String newText"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableSign",
+    "SendHandle": "SendChangeTextRequest",
+    "Handler": "ReceiveChangeTextRequest",
+    "SentBy": "Client",
+    "LegacyName": null,
+    "Parameters": "ServerInvocationContext& context, String newText"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableSpot",
+    "SendHandle": "SendPowered",
+    "Handler": "ReceivePowered",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "Boolean newPowered"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableSpot",
+    "SendHandle": "SendToggleRequest",
+    "Handler": "ReceiveToggleRequest",
+    "SentBy": "Client",
+    "LegacyName": null,
+    "Parameters": "ServerInvocationContext& context, Boolean desiredPowered"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableStereo",
+    "SendHandle": "SendTrack",
+    "Handler": "ReceiveTrack",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "Guid newTrack"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableStereo",
+    "SendHandle": "SendTrackRequest",
+    "Handler": "ReceiveTrackRequest",
+    "SentBy": "Client",
+    "LegacyName": null,
+    "Parameters": "ServerInvocationContext& context, Guid newTrack"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableStereo",
+    "SendHandle": "SendChangeVolume",
+    "Handler": "ReceiveChangeVolume",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "Byte newVolume"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableStereo",
+    "SendHandle": "SendChangeVolumeRequest",
+    "Handler": "ReceiveChangeVolumeRequest",
+    "SentBy": "Client",
+    "LegacyName": null,
+    "Parameters": "ServerInvocationContext& context, Byte newVolume"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableStorage",
+    "SendHandle": "SendInteractRequest",
+    "Handler": "ReceiveInteractRequest",
+    "SentBy": "Client",
+    "LegacyName": null,
+    "Parameters": "ServerInvocationContext& context, Boolean quickGrab"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableStorage",
+    "SendHandle": "SendDisplay",
+    "Handler": "ReceiveDisplay",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "UInt16 id, Byte quality, Byte[] state, UInt16 skin, UInt16 mythic, String tags, String dynamicProps"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableStorage",
+    "SendHandle": "SendRotDisplay",
+    "Handler": "ReceiveRotDisplay",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "Byte rotComp"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableStorage",
+    "SendHandle": "SendRotDisplayRequest",
+    "Handler": "ReceiveRotDisplayRequest",
+    "SentBy": "Client",
+    "LegacyName": null,
+    "Parameters": "ServerInvocationContext& context, Byte rotComp"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.InteractableTank",
+    "SendHandle": "SendAmount",
+    "Handler": "ReceiveAmount",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "UInt16 newAmount"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.LightningWeatherComponent",
+    "SendHandle": "SendLightningStrike",
+    "Handler": "ReceiveLightningStrike",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "Vector3 hitPosition"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.AnimalManager",
+    "SendHandle": "SendAnimalAlive",
+    "Handler": "ReceiveAnimalAlive",
+    "SentBy": "Server",
+    "LegacyName": "tellAnimalAlive",
+    "Parameters": "UInt16 index, Vector3 newPosition, Byte newAngle"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.AnimalManager",
+    "SendHandle": "SendAnimalDead",
+    "Handler": "ReceiveAnimalDead",
+    "SentBy": "Server",
+    "LegacyName": "tellAnimalDead",
+    "Parameters": "UInt16 index, Vector3 newRagdoll, ERagdollEffect newRagdollEffect"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.AnimalManager",
+    "SendHandle": "SendAnimalStates",
+    "Handler": "ReceiveAnimalStates",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "ClientInvocationContext& context"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.AnimalManager",
+    "SendHandle": "SendAnimalStartle",
+    "Handler": "ReceiveAnimalStartle",
+    "SentBy": "Server",
+    "LegacyName": "askAnimalStartle",
+    "Parameters": "UInt16 index"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.AnimalManager",
+    "SendHandle": "SendAnimalAttack",
+    "Handler": "ReceiveAnimalAttack",
+    "SentBy": "Server",
+    "LegacyName": "askAnimalAttack",
+    "Parameters": "UInt16 index"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.AnimalManager",
+    "SendHandle": "SendAnimalPanic",
+    "Handler": "ReceiveAnimalPanic",
+    "SentBy": "Server",
+    "LegacyName": "askAnimalPanic",
+    "Parameters": "UInt16 index"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.AnimalManager",
+    "SendHandle": "SendMultipleAnimals",
+    "Handler": "ReceiveMultipleAnimals",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "ClientInvocationContext& context"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.AnimalManager",
+    "SendHandle": "SendSingleAnimal",
+    "Handler": "ReceiveSingleAnimal",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "ClientInvocationContext& context"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.BarricadeDrop",
+    "SendHandle": "SendHealth",
+    "Handler": "ReceiveHealth",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "Byte hp"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.BarricadeDrop",
+    "SendHandle": "SendTransform",
+    "Handler": "ReceiveTransform",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "ClientInvocationContext& context, Byte old_x, Byte old_y, UInt16 oldPlant, Vector3 point, Byte angle_x, Byte angle_y, Byte angle_z"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.BarricadeDrop",
+    "SendHandle": "SendTransformRequest",
+    "Handler": "ReceiveTransformRequest",
+    "SentBy": "Client",
+    "LegacyName": null,
+    "Parameters": "ServerInvocationContext& context, Vector3 point, Byte angle_x, Byte angle_y, Byte angle_z"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.BarricadeDrop",
+    "SendHandle": "SendOwnerAndGroup",
+    "Handler": "ReceiveOwnerAndGroup",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "UInt64 newOwner, UInt64 newGroup"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.BarricadeDrop",
+    "SendHandle": "SendUpdateState",
+    "Handler": "ReceiveUpdateState",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "Byte[] newState"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.BarricadeDrop",
+    "SendHandle": "SendSalvageRequest",
+    "Handler": "ReceiveSalvageRequest",
+    "SentBy": "Client",
+    "LegacyName": null,
+    "Parameters": "ServerInvocationContext& context"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.BarricadeManager",
+    "SendHandle": "SendDestroyBarricade",
+    "Handler": "ReceiveDestroyBarricade",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "ClientInvocationContext& context, NetId netId"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.BarricadeManager",
+    "SendHandle": "SendClearRegionBarricades",
+    "Handler": "ReceiveClearRegionBarricades",
+    "SentBy": "Server",
+    "LegacyName": "tellClearRegionBarricades",
+    "Parameters": "Byte x, Byte y"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.BarricadeManager",
+    "SendHandle": "SendSingleBarricade",
+    "Handler": "ReceiveSingleBarricade",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "ClientInvocationContext& context, NetId parentNetId, Guid assetId, Byte[] state, Vector3 point, Byte angle_x, Byte angle_y, Byte angle_z, UInt64 owner, UInt64 group, NetId netId"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.BarricadeManager",
+    "SendHandle": "SendMultipleBarricades",
+    "Handler": "ReceiveMultipleBarricades",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "ClientInvocationContext& context"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ChatManager",
+    "SendHandle": "SendVoteStart",
+    "Handler": "ReceiveVoteStart",
+    "SentBy": "Server",
+    "LegacyName": "tellVoteStart",
+    "Parameters": "CSteamID origin, CSteamID target, Byte votesNeeded"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ChatManager",
+    "SendHandle": "SendVoteUpdate",
+    "Handler": "ReceiveVoteUpdate",
+    "SentBy": "Server",
+    "LegacyName": "tellVoteMessage",
+    "Parameters": "Byte voteYes, Byte voteNo"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ChatManager",
+    "SendHandle": "SendVoteStop",
+    "Handler": "ReceiveVoteStop",
+    "SentBy": "Server",
+    "LegacyName": "tellVoteStop",
+    "Parameters": "EVotingMessage message"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ChatManager",
+    "SendHandle": "SendVoteMessage",
+    "Handler": "ReceiveVoteMessage",
+    "SentBy": "Server",
+    "LegacyName": "tellVoteMessage",
+    "Parameters": "EVotingMessage message"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ChatManager",
+    "SendHandle": "SendSubmitVoteRequest",
+    "Handler": "ReceiveSubmitVoteRequest",
+    "SentBy": "Client",
+    "LegacyName": "askVote",
+    "Parameters": "ServerInvocationContext& context, Boolean vote"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ChatManager",
+    "SendHandle": "SendCallVoteRequest",
+    "Handler": "ReceiveCallVoteRequest",
+    "SentBy": "Client",
+    "LegacyName": "askCallVote",
+    "Parameters": "ServerInvocationContext& context, CSteamID target"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ChatManager",
+    "SendHandle": "SendChatEntry",
+    "Handler": "ReceiveChatEntry",
+    "SentBy": "Server",
+    "LegacyName": "tellChat",
+    "Parameters": "CSteamID owner, String iconURL, EChatMode mode, Color color, Boolean rich, String text"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ChatManager",
+    "SendHandle": "SendChatRequest",
+    "Handler": "ReceiveChatRequest",
+    "SentBy": "Client",
+    "LegacyName": "askChat",
+    "Parameters": "ServerInvocationContext& context, Byte flags, String text"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.EffectManager",
+    "SendHandle": "SendEffectClearById",
+    "Handler": "ReceiveEffectClearById",
+    "SentBy": "Server",
+    "LegacyName": "tellEffectClearByID",
+    "Parameters": "UInt16 id"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.EffectManager",
+    "SendHandle": "SendEffectClearAll",
+    "Handler": "ReceiveEffectClearAll",
+    "SentBy": "Server",
+    "LegacyName": "tellEffectClearAll",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.EffectManager",
+    "SendHandle": "SendEffectPointNormal_NonUniformScale",
+    "Handler": "ReceiveEffectPointNormal_NonUniformScale",
+    "SentBy": "Server",
+    "LegacyName": "tellEffectPointNormal_NonUniformScale",
+    "Parameters": "UInt16 id, Vector3 point, Vector3 normal, Vector3 scale"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.EffectManager",
+    "SendHandle": "SendEffectPointNormal_UniformScale",
+    "Handler": "ReceiveEffectPointNormal_UniformScale",
+    "SentBy": "Server",
+    "LegacyName": "tellEffectPointNormal_UniformScale",
+    "Parameters": "UInt16 id, Vector3 point, Vector3 normal, Single uniformScale"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.EffectManager",
+    "SendHandle": "SendEffectPointNormal",
+    "Handler": "ReceiveEffectPointNormal",
+    "SentBy": "Server",
+    "LegacyName": "tellEffectPointNormal",
+    "Parameters": "UInt16 id, Vector3 point, Vector3 normal"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.EffectManager",
+    "SendHandle": "SendEffectPoint_NonUniformScale",
+    "Handler": "ReceiveEffectPoint_NonUniformScale",
+    "SentBy": "Server",
+    "LegacyName": "tellEffectPoint_NonUniformScale",
+    "Parameters": "UInt16 id, Vector3 point, Vector3 scale"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.EffectManager",
+    "SendHandle": "SendEffectPoint_UniformScale",
+    "Handler": "ReceiveEffectPoint_UniformScale",
+    "SentBy": "Server",
+    "LegacyName": "tellEffectPoint_UniformScale",
+    "Parameters": "UInt16 id, Vector3 point, Single uniformScale"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.EffectManager",
+    "SendHandle": "SendEffectPoint",
+    "Handler": "ReceiveEffectPoint",
+    "SentBy": "Server",
+    "LegacyName": "tellEffectPoint",
+    "Parameters": "UInt16 id, Vector3 point"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.EffectManager",
+    "SendHandle": "SendUIEffect",
+    "Handler": "ReceiveUIEffect",
+    "SentBy": "Server",
+    "LegacyName": "tellUIEffect",
+    "Parameters": "UInt16 id, Int16 key"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.EffectManager",
+    "SendHandle": "SendUIEffect1Arg",
+    "Handler": "ReceiveUIEffect1Arg",
+    "SentBy": "Server",
+    "LegacyName": "tellUIEffect1Arg",
+    "Parameters": "UInt16 id, Int16 key, String arg0"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.EffectManager",
+    "SendHandle": "SendUIEffect2Args",
+    "Handler": "ReceiveUIEffect2Args",
+    "SentBy": "Server",
+    "LegacyName": "tellUIEffect2Args",
+    "Parameters": "UInt16 id, Int16 key, String arg0, String arg1"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.EffectManager",
+    "SendHandle": "SendUIEffect3Args",
+    "Handler": "ReceiveUIEffect3Args",
+    "SentBy": "Server",
+    "LegacyName": "tellUIEffect3Args",
+    "Parameters": "UInt16 id, Int16 key, String arg0, String arg1, String arg2"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.EffectManager",
+    "SendHandle": "SendUIEffect4Args",
+    "Handler": "ReceiveUIEffect4Args",
+    "SentBy": "Server",
+    "LegacyName": "tellUIEffect4Args",
+    "Parameters": "UInt16 id, Int16 key, String arg0, String arg1, String arg2, String arg3"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.EffectManager",
+    "SendHandle": "SendUIEffectVisibility",
+    "Handler": "ReceiveUIEffectVisibility",
+    "SentBy": "Server",
+    "LegacyName": "tellUIEffectVisibility",
+    "Parameters": "Int16 key, String childName, Boolean visible"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.EffectManager",
+    "SendHandle": "SendUIEffectText",
+    "Handler": "ReceiveUIEffectText",
+    "SentBy": "Server",
+    "LegacyName": "tellUIEffectText",
+    "Parameters": "Int16 key, String childName, String text"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.EffectManager",
+    "SendHandle": "SendUIEffectImageURL",
+    "Handler": "ReceiveUIEffectImageURL",
+    "SentBy": "Server",
+    "LegacyName": "tellUIEffectImageURL",
+    "Parameters": "Int16 key, String childName, String url, Boolean shouldCache, Boolean forceRefresh"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.EffectManager",
+    "SendHandle": "SendEffectClicked",
+    "Handler": "ReceiveEffectClicked",
+    "SentBy": "Client",
+    "LegacyName": "tellEffectClicked",
+    "Parameters": "ServerInvocationContext& context, String buttonName"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.EffectManager",
+    "SendHandle": "SendEffectTextCommitted",
+    "Handler": "ReceiveEffectTextCommitted",
+    "SentBy": "Client",
+    "LegacyName": "tellEffectTextCommitted",
+    "Parameters": "ServerInvocationContext& context, String inputFieldName, String text"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.GroupManager",
+    "SendHandle": "SendGroupInfo",
+    "Handler": "ReceiveGroupInfo",
+    "SentBy": "Server",
+    "LegacyName": "tellGroupInfo",
+    "Parameters": "CSteamID groupID, String name, UInt32 members"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ItemManager",
+    "SendHandle": "SendTakeItem",
+    "Handler": "ReceiveTakeItem",
+    "SentBy": "Server",
+    "LegacyName": "tellTakeItem",
+    "Parameters": "Byte x, Byte y, UInt32 instanceID"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ItemManager",
+    "SendHandle": "SendTakeItemRequest",
+    "Handler": "ReceiveTakeItemRequest",
+    "SentBy": "Client",
+    "LegacyName": "askTakeItem",
+    "Parameters": "ServerInvocationContext& context, Byte x, Byte y, UInt32 instanceID, Byte to_x, Byte to_y, Byte to_rot, Byte to_page"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ItemManager",
+    "SendHandle": "SendClearRegionItems",
+    "Handler": "ReceiveClearRegionItems",
+    "SentBy": "Server",
+    "LegacyName": "tellClearRegionItems",
+    "Parameters": "Byte x, Byte y"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ItemManager",
+    "SendHandle": "SendItem",
+    "Handler": "ReceiveItem",
+    "SentBy": "Server",
+    "LegacyName": "tellItem",
+    "Parameters": "Byte x, Byte y, UInt16 id, Byte amount, Byte quality, Byte[] state, Vector3 point, UInt32 instanceID"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ItemManager",
+    "SendHandle": "SendItems",
+    "Handler": "ReceiveItems",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "ClientInvocationContext& context"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.LevelManager",
+    "SendHandle": "SendArenaOrigin",
+    "Handler": "ReceiveArenaOrigin",
+    "SentBy": "Server",
+    "LegacyName": "tellArenaOrigin",
+    "Parameters": "Vector3 newArenaCurrentCenter, Single newArenaCurrentRadius, Vector3 newArenaOriginCenter, Single newArenaOriginRadius, Vector3 newArenaTargetCenter, Single newArenaTargetRadius, Single newArenaCompactorSpeed, Byte delay"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.LevelManager",
+    "SendHandle": "SendArenaMessage",
+    "Handler": "ReceiveArenaMessage",
+    "SentBy": "Server",
+    "LegacyName": "tellArenaMessage",
+    "Parameters": "EArenaMessage newArenaMessage"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.LevelManager",
+    "SendHandle": "SendArenaPlayer",
+    "Handler": "ReceiveArenaPlayer",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "ClientInvocationContext& context"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.LevelManager",
+    "SendHandle": "SendLevelNumber",
+    "Handler": "ReceiveLevelNumber",
+    "SentBy": "Server",
+    "LegacyName": "tellLevelNumber",
+    "Parameters": "Byte newLevelNumber"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.LevelManager",
+    "SendHandle": "SendLevelTimer",
+    "Handler": "ReceiveLevelTimer",
+    "SentBy": "Server",
+    "LegacyName": "tellLevelTimer",
+    "Parameters": "Byte newTimerCount"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.LevelManager",
+    "SendHandle": "SendAirdropState",
+    "Handler": "ReceiveAirdropState",
+    "SentBy": "Server",
+    "LegacyName": "tellAirdropState",
+    "Parameters": "Vector3 state, Vector3 direction, Single speed, Single force, Single delay"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.LightingManager",
+    "SendHandle": "SendInitialLightingState",
+    "Handler": "ReceiveInitialLightingState",
+    "SentBy": "Server",
+    "LegacyName": "tellLighting",
+    "Parameters": "UInt32 serverTime, UInt32 newCycle, UInt32 newOffset, Byte moon, Byte wind, Guid activeWeatherGuid, Single activeWeatherBlendAlpha, NetId activeWeatherNetId"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.LightingManager",
+    "SendHandle": "SendLightingCycle",
+    "Handler": "ReceiveLightingCycle",
+    "SentBy": "Server",
+    "LegacyName": "tellLightingCycle",
+    "Parameters": "UInt32 newScale"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.LightingManager",
+    "SendHandle": "SendLightingOffset",
+    "Handler": "ReceiveLightingOffset",
+    "SentBy": "Server",
+    "LegacyName": "tellLightingOffset",
+    "Parameters": "UInt32 newOffset"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.LightingManager",
+    "SendHandle": "SendLightingWind",
+    "Handler": "ReceiveLightingWind",
+    "SentBy": "Server",
+    "LegacyName": "tellLightingWind",
+    "Parameters": "Byte newWind"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.LightingManager",
+    "SendHandle": "SendLightingActiveWeather",
+    "Handler": "ReceiveLightingActiveWeather",
+    "SentBy": "Server",
+    "LegacyName": "tellLightingActiveWeather",
+    "Parameters": "Guid assetGuid, Single blendAlpha, NetId netId"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ObjectManager",
+    "SendHandle": "SendObjectRubble",
+    "Handler": "ReceiveObjectRubble",
+    "SentBy": "Server",
+    "LegacyName": "tellObjectRubble",
+    "Parameters": "Byte x, Byte y, UInt16 index, Byte section, Boolean isAlive, Vector3 ragdoll"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ObjectManager",
+    "SendHandle": "SendUseObjectNPC",
+    "Handler": "ReceiveUseObjectNPC",
+    "SentBy": "Client",
+    "LegacyName": "askUseObjectNPC",
+    "Parameters": "ServerInvocationContext& context, Byte x, Byte y, UInt16 index"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ObjectManager",
+    "SendHandle": "SendUseObjectQuest",
+    "Handler": "ReceiveUseObjectQuest",
+    "SentBy": "Client",
+    "LegacyName": "askUseObjectQuest",
+    "Parameters": "ServerInvocationContext& context, Byte x, Byte y, UInt16 index"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ObjectManager",
+    "SendHandle": "SendUseObjectDropper",
+    "Handler": "ReceiveUseObjectDropper",
+    "SentBy": "Client",
+    "LegacyName": "askUseObjectDropper",
+    "Parameters": "ServerInvocationContext& context, Byte x, Byte y, UInt16 index"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ObjectManager",
+    "SendHandle": "SendObjectResourceState",
+    "Handler": "ReceiveObjectResourceState",
+    "SentBy": "Server",
+    "LegacyName": "tellObjectResource",
+    "Parameters": "Byte x, Byte y, UInt16 index, UInt16 amount"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ObjectManager",
+    "SendHandle": "SendObjectBinaryState",
+    "Handler": "ReceiveObjectBinaryState",
+    "SentBy": "Server",
+    "LegacyName": "tellToggleObjectBinaryState",
+    "Parameters": "Byte x, Byte y, UInt16 index, Boolean isUsed"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ObjectManager",
+    "SendHandle": "SendToggleObjectBinaryStateRequest",
+    "Handler": "ReceiveToggleObjectBinaryStateRequest",
+    "SentBy": "Client",
+    "LegacyName": "askToggleObjectBinaryState",
+    "Parameters": "ServerInvocationContext& context, Byte x, Byte y, UInt16 index, Boolean isUsed"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ObjectManager",
+    "SendHandle": "SendClearRegionObjects",
+    "Handler": "ReceiveClearRegionObjects",
+    "SentBy": "Server",
+    "LegacyName": "tellClearRegionObjects",
+    "Parameters": "Byte x, Byte y"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ObjectManager",
+    "SendHandle": "SendObjects",
+    "Handler": "ReceiveObjects",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "ClientInvocationContext& context"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerManager",
+    "SendHandle": "SendPlayerStates",
+    "Handler": "ReceivePlayerStates",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "ClientInvocationContext& context"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ResourceManager",
+    "SendHandle": "SendClearRegionResources",
+    "Handler": "ReceiveClearRegionResources",
+    "SentBy": "Server",
+    "LegacyName": "tellClearRegionResources",
+    "Parameters": "Byte x, Byte y"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ResourceManager",
+    "SendHandle": "SendForageRequest",
+    "Handler": "ReceiveForageRequest",
+    "SentBy": "Client",
+    "LegacyName": "askForage",
+    "Parameters": "ServerInvocationContext& context, Byte x, Byte y, UInt16 index"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ResourceManager",
+    "SendHandle": "SendResourceDead",
+    "Handler": "ReceiveResourceDead",
+    "SentBy": "Server",
+    "LegacyName": "tellResourceDead",
+    "Parameters": "Byte x, Byte y, UInt16 index, Vector3 ragdoll"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ResourceManager",
+    "SendHandle": "SendResourceAlive",
+    "Handler": "ReceiveResourceAlive",
+    "SentBy": "Server",
+    "LegacyName": "tellResourceAlive",
+    "Parameters": "Byte x, Byte y, UInt16 index"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ResourceManager",
+    "SendHandle": "SendResources",
+    "Handler": "ReceiveResources",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "ClientInvocationContext& context"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.StructureDrop",
+    "SendHandle": "SendHealth",
+    "Handler": "ReceiveHealth",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "Byte hp"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.StructureDrop",
+    "SendHandle": "SendTransform",
+    "Handler": "ReceiveTransform",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "ClientInvocationContext& context, Byte old_x, Byte old_y, Vector3 point, Byte angle_x, Byte angle_y, Byte angle_z"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.StructureDrop",
+    "SendHandle": "SendTransformRequest",
+    "Handler": "ReceiveTransformRequest",
+    "SentBy": "Client",
+    "LegacyName": null,
+    "Parameters": "ServerInvocationContext& context, Vector3 point, Byte angle_x, Byte angle_y, Byte angle_z"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.StructureDrop",
+    "SendHandle": "SendOwnerAndGroup",
+    "Handler": "ReceiveOwnerAndGroup",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "UInt64 newOwner, UInt64 newGroup"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.StructureDrop",
+    "SendHandle": "SendSalvageRequest",
+    "Handler": "ReceiveSalvageRequest",
+    "SentBy": "Client",
+    "LegacyName": null,
+    "Parameters": "ServerInvocationContext& context"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.StructureManager",
+    "SendHandle": "SendDestroyStructure",
+    "Handler": "ReceiveDestroyStructure",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "ClientInvocationContext& context, NetId netId, Vector3 ragdoll"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.StructureManager",
+    "SendHandle": "SendClearRegionStructures",
+    "Handler": "ReceiveClearRegionStructures",
+    "SentBy": "Server",
+    "LegacyName": "tellClearRegionStructures",
+    "Parameters": "Byte x, Byte y"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.StructureManager",
+    "SendHandle": "SendSingleStructure",
+    "Handler": "ReceiveSingleStructure",
+    "SentBy": "Server",
+    "LegacyName": "tellStructure",
+    "Parameters": "Byte x, Byte y, Guid id, Vector3 point, Byte angle_x, Byte angle_y, Byte angle_z, UInt64 owner, UInt64 group, NetId netId"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.StructureManager",
+    "SendHandle": "SendMultipleStructures",
+    "Handler": "ReceiveMultipleStructures",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "ClientInvocationContext& context"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.VehicleManager",
+    "SendHandle": "SendVehicleLockState",
+    "Handler": "ReceiveVehicleLockState",
+    "SentBy": "Server",
+    "LegacyName": "tellVehicleLock",
+    "Parameters": "UInt32 instanceID, CSteamID owner, CSteamID group, Boolean locked"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.VehicleManager",
+    "SendHandle": "SendVehicleSkin",
+    "Handler": "ReceiveVehicleSkin",
+    "SentBy": "Server",
+    "LegacyName": "tellVehicleSkin",
+    "Parameters": "UInt32 instanceID, UInt16 skinID, UInt16 mythicID"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.VehicleManager",
+    "SendHandle": "SendVehicleSirens",
+    "Handler": "ReceiveVehicleSirens",
+    "SentBy": "Server",
+    "LegacyName": "tellVehicleSirens",
+    "Parameters": "UInt32 instanceID, Boolean on"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.VehicleManager",
+    "SendHandle": "SendVehicleBlimp",
+    "Handler": "ReceiveVehicleBlimp",
+    "SentBy": "Server",
+    "LegacyName": "tellVehicleBlimp",
+    "Parameters": "UInt32 instanceID, Boolean on"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.VehicleManager",
+    "SendHandle": "SendVehicleHeadlights",
+    "Handler": "ReceiveVehicleHeadlights",
+    "SentBy": "Server",
+    "LegacyName": "tellVehicleHeadlights",
+    "Parameters": "UInt32 instanceID, Boolean on"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.VehicleManager",
+    "SendHandle": "SendVehicleHorn",
+    "Handler": "ReceiveVehicleHorn",
+    "SentBy": "Server",
+    "LegacyName": "tellVehicleHorn",
+    "Parameters": "UInt32 instanceID"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.VehicleManager",
+    "SendHandle": "SendVehicleFuel",
+    "Handler": "ReceiveVehicleFuel",
+    "SentBy": "Server",
+    "LegacyName": "tellVehicleFuel",
+    "Parameters": "UInt32 instanceID, UInt16 newFuel"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.VehicleManager",
+    "SendHandle": "SendVehicleBatteryCharge",
+    "Handler": "ReceiveVehicleBatteryCharge",
+    "SentBy": "Server",
+    "LegacyName": "tellVehicleBatteryCharge",
+    "Parameters": "UInt32 instanceID, UInt16 newBatteryCharge"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.VehicleManager",
+    "SendHandle": "SendVehicleTireAliveMask",
+    "Handler": "ReceiveVehicleTireAliveMask",
+    "SentBy": "Server",
+    "LegacyName": "tellVehicleTireAliveMask",
+    "Parameters": "UInt32 instanceID, Byte newTireAliveMask"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.VehicleManager",
+    "SendHandle": "SendVehicleExploded",
+    "Handler": "ReceiveVehicleExploded",
+    "SentBy": "Server",
+    "LegacyName": "tellVehicleExploded",
+    "Parameters": "UInt32 instanceID"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.VehicleManager",
+    "SendHandle": "SendVehicleHealth",
+    "Handler": "ReceiveVehicleHealth",
+    "SentBy": "Server",
+    "LegacyName": "tellVehicleHealth",
+    "Parameters": "UInt32 instanceID, UInt16 newHealth"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.VehicleManager",
+    "SendHandle": "SendVehicleRecov",
+    "Handler": "ReceiveVehicleRecov",
+    "SentBy": "Server",
+    "LegacyName": "tellVehicleRecov",
+    "Parameters": "UInt32 instanceID, Vector3 newPosition, Int32 newRecov"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.VehicleManager",
+    "SendHandle": "SendVehicleStates",
+    "Handler": "ReceiveVehicleStates",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "ClientInvocationContext& context"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.VehicleManager",
+    "SendHandle": "SendDestroySingleVehicle",
+    "Handler": "ReceiveDestroySingleVehicle",
+    "SentBy": "Server",
+    "LegacyName": "tellVehicleDestroy",
+    "Parameters": "UInt32 instanceID"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.VehicleManager",
+    "SendHandle": "SendDestroyAllVehicles",
+    "Handler": "ReceiveDestroyAllVehicles",
+    "SentBy": "Server",
+    "LegacyName": "tellVehicleDestroyAll",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.VehicleManager",
+    "SendHandle": "SendSingleVehicle",
+    "Handler": "ReceiveSingleVehicle",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "ClientInvocationContext& context"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.VehicleManager",
+    "SendHandle": "SendMultipleVehicles",
+    "Handler": "ReceiveMultipleVehicles",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "ClientInvocationContext& context"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.VehicleManager",
+    "SendHandle": "SendEnterVehicle",
+    "Handler": "ReceiveEnterVehicle",
+    "SentBy": "Server",
+    "LegacyName": "tellEnterVehicle",
+    "Parameters": "UInt32 instanceID, Byte seat, CSteamID player"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.VehicleManager",
+    "SendHandle": "SendExitVehicle",
+    "Handler": "ReceiveExitVehicle",
+    "SentBy": "Server",
+    "LegacyName": "tellExitVehicle",
+    "Parameters": "UInt32 instanceID, Byte seat, Vector3 point, Byte angle, Boolean forceUpdate"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.VehicleManager",
+    "SendHandle": "SendSwapVehicleSeats",
+    "Handler": "ReceiveSwapVehicleSeats",
+    "SentBy": "Server",
+    "LegacyName": "tellSwapVehicle",
+    "Parameters": "UInt32 instanceID, Byte fromSeat, Byte toSeat"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.VehicleManager",
+    "SendHandle": "SendVehicleLockRequest",
+    "Handler": "ReceiveVehicleLockRequest",
+    "SentBy": "Client",
+    "LegacyName": "askVehicleLock",
+    "Parameters": "ServerInvocationContext& context"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.VehicleManager",
+    "SendHandle": "SendVehicleSkinRequest",
+    "Handler": "ReceiveVehicleSkinRequest",
+    "SentBy": "Client",
+    "LegacyName": "askVehicleSkin",
+    "Parameters": "ServerInvocationContext& context"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.VehicleManager",
+    "SendHandle": "SendToggleVehicleHeadlights",
+    "Handler": "ReceiveToggleVehicleHeadlights",
+    "SentBy": "Client",
+    "LegacyName": "askVehicleHeadlights",
+    "Parameters": "ServerInvocationContext& context, Boolean wantsHeadlightsOn"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.VehicleManager",
+    "SendHandle": "SendUseVehicleBonus",
+    "Handler": "ReceiveUseVehicleBonus",
+    "SentBy": "Client",
+    "LegacyName": "askVehicleBonus",
+    "Parameters": "ServerInvocationContext& context, Byte bonusType"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.VehicleManager",
+    "SendHandle": "SendStealVehicleBattery",
+    "Handler": "ReceiveStealVehicleBattery",
+    "SentBy": "Client",
+    "LegacyName": "askVehicleStealBattery",
+    "Parameters": "ServerInvocationContext& context"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.VehicleManager",
+    "SendHandle": "SendVehicleHornRequest",
+    "Handler": "ReceiveVehicleHornRequest",
+    "SentBy": "Client",
+    "LegacyName": "askVehicleHorn",
+    "Parameters": "ServerInvocationContext& context"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.VehicleManager",
+    "SendHandle": "SendEnterVehicleRequest",
+    "Handler": "ReceiveEnterVehicleRequest",
+    "SentBy": "Client",
+    "LegacyName": "askEnterVehicle",
+    "Parameters": "ServerInvocationContext& context, UInt32 instanceID, Byte[] hash, Byte[] physicsProfileHash, Byte engine"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.VehicleManager",
+    "SendHandle": "SendExitVehicleRequest",
+    "Handler": "ReceiveExitVehicleRequest",
+    "SentBy": "Client",
+    "LegacyName": "askExitVehicle",
+    "Parameters": "ServerInvocationContext& context, Vector3 velocity"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.VehicleManager",
+    "SendHandle": "SendSwapVehicleRequest",
+    "Handler": "ReceiveSwapVehicleRequest",
+    "SentBy": "Client",
+    "LegacyName": "askSwapVehicle",
+    "Parameters": "ServerInvocationContext& context, Byte toSeat"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ZombieManager",
+    "SendHandle": "SendBeacon",
+    "Handler": "ReceiveBeacon",
+    "SentBy": "Server",
+    "LegacyName": "tellBeacon",
+    "Parameters": "Byte reference, Boolean hasBeacon"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ZombieManager",
+    "SendHandle": "SendWave",
+    "Handler": "ReceiveWave",
+    "SentBy": "Server",
+    "LegacyName": "tellWave",
+    "Parameters": "Boolean newWaveReady, Int32 newWave"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ZombieManager",
+    "SendHandle": "SendZombieAlive",
+    "Handler": "ReceiveAnimalAlive",
+    "SentBy": "Server",
+    "LegacyName": "tellZombieAlive",
+    "Parameters": "Byte reference, UInt16 id, Byte newType, Byte newSpeciality, Byte newShirt, Byte newPants, Byte newHat, Byte newGear, Vector3 newPosition, Byte newAngle"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ZombieManager",
+    "SendHandle": "SendZombieDead",
+    "Handler": "ReceiveZombieDead",
+    "SentBy": "Server",
+    "LegacyName": "tellZombieDead",
+    "Parameters": "Byte reference, UInt16 id, Vector3 newRagdoll, ERagdollEffect newRagdollEffect"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ZombieManager",
+    "SendHandle": "SendZombieStates",
+    "Handler": "ReceiveZombieStates",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "ClientInvocationContext& context"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ZombieManager",
+    "SendHandle": "SendZombieSpeciality",
+    "Handler": "ReceiveZombieSpeciality",
+    "SentBy": "Server",
+    "LegacyName": "tellZombieSpeciality",
+    "Parameters": "Byte reference, UInt16 id, EZombieSpeciality speciality"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ZombieManager",
+    "SendHandle": "SendZombieThrow",
+    "Handler": "ReceiveZombieThrow",
+    "SentBy": "Server",
+    "LegacyName": "askZombieThrow",
+    "Parameters": "Byte reference, UInt16 id"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ZombieManager",
+    "SendHandle": "SendZombieBoulder",
+    "Handler": "ReceiveZombieBoulder",
+    "SentBy": "Server",
+    "LegacyName": "askZombieBoulder",
+    "Parameters": "Byte reference, UInt16 id, Vector3 origin, Vector3 direction"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ZombieManager",
+    "SendHandle": "SendZombieSpit",
+    "Handler": "ReceiveZombieSpit",
+    "SentBy": "Server",
+    "LegacyName": "askZombieSpit",
+    "Parameters": "Byte reference, UInt16 id"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ZombieManager",
+    "SendHandle": "SendZombieCharge",
+    "Handler": "ReceiveZombieCharge",
+    "SentBy": "Server",
+    "LegacyName": "askZombieCharge",
+    "Parameters": "Byte reference, UInt16 id"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ZombieManager",
+    "SendHandle": "SendZombieStomp",
+    "Handler": "ReceiveZombieStomp",
+    "SentBy": "Server",
+    "LegacyName": "askZombieStomp",
+    "Parameters": "Byte reference, UInt16 id"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ZombieManager",
+    "SendHandle": "SendZombieBreath",
+    "Handler": "ReceiveZombieBreath",
+    "SentBy": "Server",
+    "LegacyName": "askZombieBreath",
+    "Parameters": "Byte reference, UInt16 id"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ZombieManager",
+    "SendHandle": "SendZombieAcid",
+    "Handler": "ReceiveZombieAcid",
+    "SentBy": "Server",
+    "LegacyName": "askZombieAcid",
+    "Parameters": "Byte reference, UInt16 id, Vector3 origin, Vector3 direction"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ZombieManager",
+    "SendHandle": "SendZombieSpark",
+    "Handler": "ReceiveZombieSpark",
+    "SentBy": "Server",
+    "LegacyName": "askZombieSpark",
+    "Parameters": "Byte reference, UInt16 id, Vector3 target"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ZombieManager",
+    "SendHandle": "SendZombieAttack",
+    "Handler": "ReceiveZombieAttack",
+    "SentBy": "Server",
+    "LegacyName": "askZombieAttack",
+    "Parameters": "Byte reference, UInt16 id, Byte attack"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ZombieManager",
+    "SendHandle": "SendZombieStartle",
+    "Handler": "ReceiveZombieStartle",
+    "SentBy": "Server",
+    "LegacyName": "askZombieStartle",
+    "Parameters": "Byte reference, UInt16 id, Byte startle"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ZombieManager",
+    "SendHandle": "SendZombieStun",
+    "Handler": "ReceiveZombieStun",
+    "SentBy": "Server",
+    "LegacyName": "askZombieStun",
+    "Parameters": "Byte reference, UInt16 id, Byte stun"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.ZombieManager",
+    "SendHandle": "SendZombies",
+    "Handler": "ReceiveZombies",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "ClientInvocationContext& context"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.Player",
+    "SendHandle": "SendScreenshotDestination",
+    "Handler": "ReceiveScreenshotDestination",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "ClientInvocationContext& context"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.Player",
+    "SendHandle": "SendScreenshotRelay",
+    "Handler": "ReceiveScreenshotRelay",
+    "SentBy": "Client",
+    "LegacyName": null,
+    "Parameters": "ServerInvocationContext& context"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.Player",
+    "SendHandle": "SendTakeScreenshot",
+    "Handler": "ReceiveTakeScreenshot",
+    "SentBy": "Server",
+    "LegacyName": "askScreenshot",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.Player",
+    "SendHandle": "SendBrowserRequest",
+    "Handler": "ReceiveBrowserRequest",
+    "SentBy": "Server",
+    "LegacyName": "askBrowserRequest",
+    "Parameters": "String msg, String url"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.Player",
+    "SendHandle": "SendRelayToServer",
+    "Handler": "ReceiveRelayToServer",
+    "SentBy": "Server",
+    "LegacyName": "askRelayToServer",
+    "Parameters": "UInt32 ip, UInt16 port, String password, Boolean shouldShowMenu"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.Player",
+    "SendHandle": "SendSetPluginWidgetFlags",
+    "Handler": "ReceiveSetPluginWidgetFlags",
+    "SentBy": "Server",
+    "LegacyName": "clientsideSetPluginWidgetFlags",
+    "Parameters": "UInt32 newFlags"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.Player",
+    "SendHandle": "SendBattlEyeLogsRequest",
+    "Handler": "ReceiveBattlEyeLogsRequest",
+    "SentBy": "Client",
+    "LegacyName": "askRequestBattlEyeLogs",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.Player",
+    "SendHandle": "SendTerminalRelay",
+    "Handler": "ReceiveTerminalRelay",
+    "SentBy": "Server",
+    "LegacyName": "tellTerminalRelay",
+    "Parameters": "String internalMessage"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.Player",
+    "SendHandle": "SendTeleport",
+    "Handler": "ReceiveTeleport",
+    "SentBy": "Server",
+    "LegacyName": "askTeleport",
+    "Parameters": "Vector3 position, Byte angle"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.Player",
+    "SendHandle": "SendStat",
+    "Handler": "ReceiveStat",
+    "SentBy": "Server",
+    "LegacyName": "tellStat",
+    "Parameters": "EPlayerStat stat"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.Player",
+    "SendHandle": "SendAchievementUnlocked",
+    "Handler": "ReceiveAchievementUnlocked",
+    "SentBy": "Server",
+    "LegacyName": "tellAchievementUnlocked",
+    "Parameters": "String id"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.Player",
+    "SendHandle": "SendUIMessage",
+    "Handler": "ReceiveUIMessage",
+    "SentBy": "Server",
+    "LegacyName": "askMessage",
+    "Parameters": "EPlayerMessage message"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerAnimator",
+    "SendHandle": "SendLean",
+    "Handler": "ReceiveLean",
+    "SentBy": "Server",
+    "LegacyName": "tellLean",
+    "Parameters": "Byte newLean"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerAnimator",
+    "SendHandle": "SendGesture",
+    "Handler": "ReceiveGesture",
+    "SentBy": "Server",
+    "LegacyName": "tellGesture",
+    "Parameters": "EPlayerGesture newGesture"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerAnimator",
+    "SendHandle": "SendGestureRequest",
+    "Handler": "ReceiveGestureRequest",
+    "SentBy": "Client",
+    "LegacyName": "askGesture",
+    "Parameters": "EPlayerGesture newGesture"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerClothing",
+    "SendHandle": "SendShirtQuality",
+    "Handler": "ReceiveShirtQuality",
+    "SentBy": "Server",
+    "LegacyName": "tellUpdateShirtQuality",
+    "Parameters": "Byte quality"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerClothing",
+    "SendHandle": "SendPantsQuality",
+    "Handler": "ReceivePantsQuality",
+    "SentBy": "Server",
+    "LegacyName": "tellUpdatePantsQuality",
+    "Parameters": "Byte quality"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerClothing",
+    "SendHandle": "SendHatQuality",
+    "Handler": "ReceiveHatQuality",
+    "SentBy": "Server",
+    "LegacyName": "tellUpdateHatQuality",
+    "Parameters": "Byte quality"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerClothing",
+    "SendHandle": "SendBackpackQuality",
+    "Handler": "ReceiveBackpackQuality",
+    "SentBy": "Server",
+    "LegacyName": "tellUpdateBackpackQuality",
+    "Parameters": "Byte quality"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerClothing",
+    "SendHandle": "SendVestQuality",
+    "Handler": "ReceiveVestQuality",
+    "SentBy": "Server",
+    "LegacyName": "tellUpdateVestQuality",
+    "Parameters": "Byte quality"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerClothing",
+    "SendHandle": "SendMaskQuality",
+    "Handler": "ReceiveMaskQuality",
+    "SentBy": "Server",
+    "LegacyName": "tellUpdateMaskQuality",
+    "Parameters": "Byte quality"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerClothing",
+    "SendHandle": "SendGlassesQuality",
+    "Handler": "ReceiveGlassesQuality",
+    "SentBy": "Server",
+    "LegacyName": "tellUpdateGlassesQuality",
+    "Parameters": "Byte quality"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerClothing",
+    "SendHandle": "SendWearShirt",
+    "Handler": "ReceiveWearShirt",
+    "SentBy": "Server",
+    "LegacyName": "tellWearShirt",
+    "Parameters": "Guid id, Byte quality, Byte[] state"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerClothing",
+    "SendHandle": "SendSwapShirtRequest",
+    "Handler": "ReceiveSwapShirtRequest",
+    "SentBy": "Client",
+    "LegacyName": "askSwapShirt",
+    "Parameters": "Byte page, Byte x, Byte y"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerClothing",
+    "SendHandle": "SendWearPants",
+    "Handler": "ReceiveWearPants",
+    "SentBy": "Server",
+    "LegacyName": "tellWearPants",
+    "Parameters": "Guid id, Byte quality, Byte[] state"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerClothing",
+    "SendHandle": "SendSwapPantsRequest",
+    "Handler": "ReceiveSwapPantsRequest",
+    "SentBy": "Client",
+    "LegacyName": "askSwapPants",
+    "Parameters": "Byte page, Byte x, Byte y"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerClothing",
+    "SendHandle": "SendWearHat",
+    "Handler": "ReceiveWearHat",
+    "SentBy": "Server",
+    "LegacyName": "tellWearHat",
+    "Parameters": "Guid id, Byte quality, Byte[] state"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerClothing",
+    "SendHandle": "SendSwapHatRequest",
+    "Handler": "ReceiveSwapHatRequest",
+    "SentBy": "Client",
+    "LegacyName": "askSwapHat",
+    "Parameters": "Byte page, Byte x, Byte y"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerClothing",
+    "SendHandle": "SendWearBackpack",
+    "Handler": "ReceiveWearBackpack",
+    "SentBy": "Server",
+    "LegacyName": "tellWearBackpack",
+    "Parameters": "Guid id, Byte quality, Byte[] state"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerClothing",
+    "SendHandle": "SendSwapBackpackRequest",
+    "Handler": "ReceiveSwapBackpackRequest",
+    "SentBy": "Client",
+    "LegacyName": "askSwapBackpack",
+    "Parameters": "Byte page, Byte x, Byte y"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerClothing",
+    "SendHandle": "SendVisualToggleState",
+    "Handler": "ReceiveVisualToggleState",
+    "SentBy": "Server",
+    "LegacyName": "tellVisualToggle",
+    "Parameters": "EVisualToggleType type, Boolean toggle"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerClothing",
+    "SendHandle": "SendVisualToggleRequest",
+    "Handler": "ReceiveVisualToggleRequest",
+    "SentBy": "Client",
+    "LegacyName": "askVisualToggle",
+    "Parameters": "EVisualToggleType type"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerClothing",
+    "SendHandle": "SendWearVest",
+    "Handler": "ReceiveWearVest",
+    "SentBy": "Server",
+    "LegacyName": "tellWearVest",
+    "Parameters": "Guid id, Byte quality, Byte[] state"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerClothing",
+    "SendHandle": "SendSwapVestRequest",
+    "Handler": "ReceiveSwapVestRequest",
+    "SentBy": "Client",
+    "LegacyName": "askSwapVest",
+    "Parameters": "Byte page, Byte x, Byte y"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerClothing",
+    "SendHandle": "SendWearMask",
+    "Handler": "ReceiveWearMask",
+    "SentBy": "Server",
+    "LegacyName": "tellWearMask",
+    "Parameters": "Guid id, Byte quality, Byte[] state"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerClothing",
+    "SendHandle": "SendSwapMaskRequest",
+    "Handler": "ReceiveSwapMaskRequest",
+    "SentBy": "Client",
+    "LegacyName": "askSwapMask",
+    "Parameters": "Byte page, Byte x, Byte y"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerClothing",
+    "SendHandle": "SendWearGlasses",
+    "Handler": "ReceiveWearGlasses",
+    "SentBy": "Server",
+    "LegacyName": "tellWearGlasses",
+    "Parameters": "Guid id, Byte quality, Byte[] state"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerClothing",
+    "SendHandle": "SendSwapGlassesRequest",
+    "Handler": "ReceiveSwapGlassesRequest",
+    "SentBy": "Client",
+    "LegacyName": "askSwapGlasses",
+    "Parameters": "Byte page, Byte x, Byte y"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerClothing",
+    "SendHandle": "SendClothingState",
+    "Handler": "ReceiveClothingState",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "ClientInvocationContext& context"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerClothing",
+    "SendHandle": "SendFaceState",
+    "Handler": "ReceiveFaceState",
+    "SentBy": "Server",
+    "LegacyName": "tellSwapFace",
+    "Parameters": "Byte index"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerClothing",
+    "SendHandle": "SendSwapFaceRequest",
+    "Handler": "ReceiveSwapFaceRequest",
+    "SentBy": "Client",
+    "LegacyName": "askSwapFace",
+    "Parameters": "Byte index"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerCrafting",
+    "SendHandle": "SendStripAttachments",
+    "Handler": "ReceiveStripAttachments",
+    "SentBy": "Client",
+    "LegacyName": "askStripAttachments",
+    "Parameters": "Byte page, Byte x, Byte y"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerCrafting",
+    "SendHandle": "SendRefreshCrafting",
+    "Handler": "ReceiveRefreshCrafting",
+    "SentBy": "Server",
+    "LegacyName": "tellCraft",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerCrafting",
+    "SendHandle": "SendCraft",
+    "Handler": "ReceiveCraft",
+    "SentBy": "Client",
+    "LegacyName": "askCraft",
+    "Parameters": "UInt16 id, Byte index, Boolean force"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerEquipment",
+    "SendHandle": "SendToggleVisionRequest",
+    "Handler": "ReceiveToggleVisionRequest",
+    "SentBy": "Client",
+    "LegacyName": "askToggleVision",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerEquipment",
+    "SendHandle": "SendToggleVision",
+    "Handler": "ReceiveToggleVision",
+    "SentBy": "Server",
+    "LegacyName": "tellToggleVision",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerEquipment",
+    "SendHandle": "SendSlot",
+    "Handler": "ReceiveSlot",
+    "SentBy": "Server",
+    "LegacyName": "tellSlot",
+    "Parameters": "Byte slot, UInt16 id, Byte[] state"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerEquipment",
+    "SendHandle": "SendUpdateStateTemp",
+    "Handler": "ReceiveUpdateStateTemp",
+    "SentBy": "Server",
+    "LegacyName": "tellUpdateStateTemp",
+    "Parameters": "Byte[] newState"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerEquipment",
+    "SendHandle": "SendUpdateState",
+    "Handler": "ReceiveUpdateState",
+    "SentBy": "Server",
+    "LegacyName": "tellUpdateState",
+    "Parameters": "Byte page, Byte index, Byte[] newState"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerEquipment",
+    "SendHandle": "SendTellAskEquip",
+    "Handler": "ReceiveTellAskEquip",
+    "SentBy": "Server",
+    "LegacyName": "tellAskEquip",
+    "Parameters": "Byte page, Byte x, Byte y"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerEquipment",
+    "SendHandle": "SendTryEquip",
+    "Handler": "ReceiveTryEquip",
+    "SentBy": "Client",
+    "LegacyName": "askTryEquip",
+    "Parameters": "Byte page, Byte x, Byte y"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerEquipment",
+    "SendHandle": "SendEquip",
+    "Handler": "ReceiveEquip",
+    "SentBy": "Server",
+    "LegacyName": "tellEquip",
+    "Parameters": "Byte page, Byte x, Byte y, Guid newAssetGuid, Byte newQuality, Byte[] newState, NetId useableNetId"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerEquipment",
+    "SendHandle": "SendEquipRequest",
+    "Handler": "ReceiveEquipRequest",
+    "SentBy": "Client",
+    "LegacyName": "askEquip",
+    "Parameters": "Byte page, Byte x, Byte y, Byte[] hash"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerInput",
+    "SendHandle": "SendSimulateMispredictedInputs",
+    "Handler": "ReceiveSimulateMispredictedInputs",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "UInt32 frameNumber, EPlayerStance stance, Vector3 position, Vector3 velocity, Byte stamina, Int32 lastTireOffset, Int32 lastRestOffset"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerInput",
+    "SendHandle": "SendAckGoodInputs",
+    "Handler": "ReceiveAckGoodInputs",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "UInt32 frameNumber"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerInput",
+    "SendHandle": "SendInputs",
+    "Handler": "ReceiveInputs",
+    "SentBy": "Client",
+    "LegacyName": null,
+    "Parameters": "ServerInvocationContext& context"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerInteract",
+    "SendHandle": "SendSalvageTimeOverride",
+    "Handler": "ReceiveSalvageTimeOverride",
+    "SentBy": "Server",
+    "LegacyName": "tellSalvageTimeOverride",
+    "Parameters": "Single overrideValue"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerInteract",
+    "SendHandle": "SendInspectRequest",
+    "Handler": "ReceiveInspectRequest",
+    "SentBy": "Client",
+    "LegacyName": "askInspect",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerInteract",
+    "SendHandle": "SendPlayInspect",
+    "Handler": "ReceivePlayInspect",
+    "SentBy": "Server",
+    "LegacyName": "tellInspect",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerInventory",
+    "SendHandle": "SendDragItem",
+    "Handler": "ReceiveDragItem",
+    "SentBy": "Client",
+    "LegacyName": "askDragItem",
+    "Parameters": "Byte page_0, Byte x_0, Byte y_0, Byte page_1, Byte x_1, Byte y_1, Byte rot_1"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerInventory",
+    "SendHandle": "SendSwapItem",
+    "Handler": "ReceiveSwapItem",
+    "SentBy": "Client",
+    "LegacyName": "askSwapItem",
+    "Parameters": "Byte page_0, Byte x_0, Byte y_0, Byte rot_0, Byte page_1, Byte x_1, Byte y_1, Byte rot_1"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerInventory",
+    "SendHandle": "SendDropItem",
+    "Handler": "ReceiveDropItem",
+    "SentBy": "Client",
+    "LegacyName": "askDropItem",
+    "Parameters": "Byte page, Byte x, Byte y"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerInventory",
+    "SendHandle": "SendUpdateAmount",
+    "Handler": "ReceiveUpdateAmount",
+    "SentBy": "Server",
+    "LegacyName": "tellUpdateAmount",
+    "Parameters": "Byte page, Byte index, Byte amount"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerInventory",
+    "SendHandle": "SendUpdateQuality",
+    "Handler": "ReceiveUpdateQuality",
+    "SentBy": "Server",
+    "LegacyName": "tellUpdateQuality",
+    "Parameters": "Byte page, Byte index, Byte quality"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerInventory",
+    "SendHandle": "SendUpdateInvState",
+    "Handler": "ReceiveUpdateInvState",
+    "SentBy": "Server",
+    "LegacyName": "tellUpdateInvState",
+    "Parameters": "Byte page, Byte index, Byte[] state"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerInventory",
+    "SendHandle": "SendItemAdd",
+    "Handler": "ReceiveItemAdd",
+    "SentBy": "Server",
+    "LegacyName": "tellItemAdd",
+    "Parameters": "Byte page, Byte x, Byte y, Byte rot, UInt16 id, Byte amount, Byte quality, Byte[] state"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerInventory",
+    "SendHandle": "SendItemRemove",
+    "Handler": "ReceiveItemRemove",
+    "SentBy": "Server",
+    "LegacyName": "tellItemRemove",
+    "Parameters": "Byte page, Byte x, Byte y"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerInventory",
+    "SendHandle": "SendSize",
+    "Handler": "ReceiveSize",
+    "SentBy": "Server",
+    "LegacyName": "tellSize",
+    "Parameters": "Byte page, Byte newWidth, Byte newHeight"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerInventory",
+    "SendHandle": "SendStoraging",
+    "Handler": "ReceiveStoraging",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "ClientInvocationContext& context"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerInventory",
+    "SendHandle": "SendInventory",
+    "Handler": "ReceiveInventory",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "ClientInvocationContext& context"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerLife",
+    "SendHandle": "SendDeath",
+    "Handler": "ReceiveDeath",
+    "SentBy": "Server",
+    "LegacyName": "tellDeath",
+    "Parameters": "EDeathCause newCause, ELimb newLimb, CSteamID newKiller"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerLife",
+    "SendHandle": "SendDead",
+    "Handler": "ReceiveDead",
+    "SentBy": "Server",
+    "LegacyName": "tellDead",
+    "Parameters": "Vector3 newRagdoll, ERagdollEffect newRagdollEffect"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerLife",
+    "SendHandle": "SendRevive",
+    "Handler": "ReceiveRevive",
+    "SentBy": "Server",
+    "LegacyName": "tellRevive",
+    "Parameters": "Vector3 position, Byte angle"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerLife",
+    "SendHandle": "SendLifeStats",
+    "Handler": "ReceiveLifeStats",
+    "SentBy": "Server",
+    "LegacyName": "tellLifeWithOxygen",
+    "Parameters": "Byte newHealth, Byte newFood, Byte newWater, Byte newVirus, Byte newOxygen, Boolean newBleeding, Boolean newBroken"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerLife",
+    "SendHandle": "SendHealth",
+    "Handler": "ReceiveHealth",
+    "SentBy": "Server",
+    "LegacyName": "tellHealth",
+    "Parameters": "Byte newHealth"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerLife",
+    "SendHandle": "SendFood",
+    "Handler": "ReceiveFood",
+    "SentBy": "Server",
+    "LegacyName": "tellFood",
+    "Parameters": "Byte newFood"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerLife",
+    "SendHandle": "SendWater",
+    "Handler": "ReceiveWater",
+    "SentBy": "Server",
+    "LegacyName": "tellWater",
+    "Parameters": "Byte newWater"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerLife",
+    "SendHandle": "SendVirus",
+    "Handler": "ReceiveVirus",
+    "SentBy": "Server",
+    "LegacyName": "tellVirus",
+    "Parameters": "Byte newVirus"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerLife",
+    "SendHandle": "SendBleeding",
+    "Handler": "ReceiveBleeding",
+    "SentBy": "Server",
+    "LegacyName": "tellBleeding",
+    "Parameters": "Boolean newBleeding"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerLife",
+    "SendHandle": "SendBroken",
+    "Handler": "ReceiveBroken",
+    "SentBy": "Server",
+    "LegacyName": "tellBroken",
+    "Parameters": "Boolean newBroken"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerLife",
+    "SendHandle": "SendModifyStamina",
+    "Handler": "ReceiveModifyStamina",
+    "SentBy": "Server",
+    "LegacyName": "clientModifyStamina",
+    "Parameters": "Int16 delta"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerLife",
+    "SendHandle": "SendModifyHallucination",
+    "Handler": "ReceiveModifyHallucination",
+    "SentBy": "Server",
+    "LegacyName": "clientModifyHallucination",
+    "Parameters": "Int16 delta"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerLife",
+    "SendHandle": "SendModifyWarmth",
+    "Handler": "ReceiveModifyWarmth",
+    "SentBy": "Server",
+    "LegacyName": "clientModifyWarmth",
+    "Parameters": "Int16 delta"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerLife",
+    "SendHandle": "SendRespawnRequest",
+    "Handler": "ReceiveRespawnRequest",
+    "SentBy": "Client",
+    "LegacyName": "askRespawn",
+    "Parameters": "Boolean atHome"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerLife",
+    "SendHandle": "SendSuicideRequest",
+    "Handler": "ReceiveSuicideRequest",
+    "SentBy": "Client",
+    "LegacyName": "askSuicide",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerLook",
+    "SendHandle": "SendFreecamAllowed",
+    "Handler": "ReceiveFreecamAllowed",
+    "SentBy": "Server",
+    "LegacyName": "tellFreecamAllowed",
+    "Parameters": "Boolean isAllowed"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerLook",
+    "SendHandle": "SendWorkzoneAllowed",
+    "Handler": "ReceiveWorkzoneAllowed",
+    "SentBy": "Server",
+    "LegacyName": "tellWorkzoneAllowed",
+    "Parameters": "Boolean isAllowed"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerLook",
+    "SendHandle": "SendSpecStatsAllowed",
+    "Handler": "ReceiveSpecStatsAllowed",
+    "SentBy": "Server",
+    "LegacyName": "tellSpecStatsAllowed",
+    "Parameters": "Boolean isAllowed"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerMovement",
+    "SendHandle": "SendPluginGravityMultiplier",
+    "Handler": "ReceivePluginGravityMultiplier",
+    "SentBy": "Server",
+    "LegacyName": "tellPluginGravityMultiplier",
+    "Parameters": "Single newPluginGravityMultiplier"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerMovement",
+    "SendHandle": "SendPluginJumpMultiplier",
+    "Handler": "ReceivePluginJumpMultiplier",
+    "SentBy": "Server",
+    "LegacyName": "tellPluginJumpMultiplier",
+    "Parameters": "Single newPluginJumpMultiplier"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerMovement",
+    "SendHandle": "SendPluginSpeedMultiplier",
+    "Handler": "ReceivePluginSpeedMultiplier",
+    "SentBy": "Server",
+    "LegacyName": "tellPluginSpeedMultiplier",
+    "Parameters": "Single newPluginSpeedMultiplier"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerQuests",
+    "SendHandle": "SendMarkerState",
+    "Handler": "ReceiveMarkerState",
+    "SentBy": "Server",
+    "LegacyName": "tellSetMarker",
+    "Parameters": "Boolean newIsMarkerPlaced, Vector3 newMarkerPosition, String newMarkerTextOverride"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerQuests",
+    "SendHandle": "SendSetMarkerRequest",
+    "Handler": "ReceiveSetMarkerRequest",
+    "SentBy": "Client",
+    "LegacyName": "askSetMarker",
+    "Parameters": "Boolean newIsMarkerPlaced, Vector3 newMarkerPosition"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerQuests",
+    "SendHandle": "SendRadioFrequencyState",
+    "Handler": "ReceiveRadioFrequencyState",
+    "SentBy": "Server",
+    "LegacyName": "tellSetRadioFrequency",
+    "Parameters": "UInt32 newRadioFrequency"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerQuests",
+    "SendHandle": "SendSetRadioFrequencyRequest",
+    "Handler": "ReceiveSetRadioFrequencyRequest",
+    "SentBy": "Client",
+    "LegacyName": "askSetRadioFrequency",
+    "Parameters": "UInt32 newRadioFrequency"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerQuests",
+    "SendHandle": "SendGroupState",
+    "Handler": "ReceiveGroupState",
+    "SentBy": "Server",
+    "LegacyName": "tellSetGroup",
+    "Parameters": "CSteamID newGroupID, EPlayerGroupRank newGroupRank"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerQuests",
+    "SendHandle": "SendAcceptGroupInvitationRequest",
+    "Handler": "ReceiveAcceptGroupInvitationRequest",
+    "SentBy": "Client",
+    "LegacyName": "askJoinGroupInvite",
+    "Parameters": "CSteamID newGroupID"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerQuests",
+    "SendHandle": "SendDeclineGroupInvitationRequest",
+    "Handler": "ReceiveDeclineGroupInvitationRequest",
+    "SentBy": "Client",
+    "LegacyName": "askJoinGroupInvite",
+    "Parameters": "CSteamID newGroupID"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerQuests",
+    "SendHandle": "SendLeaveGroupRequest",
+    "Handler": "ReceiveLeaveGroupRequest",
+    "SentBy": "Client",
+    "LegacyName": "askLeaveGroup",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerQuests",
+    "SendHandle": "SendDeleteGroupRequest",
+    "Handler": "ReceiveDeleteGroupRequest",
+    "SentBy": "Client",
+    "LegacyName": "askDeleteGroup",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerQuests",
+    "SendHandle": "SendCreateGroupRequest",
+    "Handler": "ReceiveCreateGroupRequest",
+    "SentBy": "Client",
+    "LegacyName": "askCreateGroup",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerQuests",
+    "SendHandle": "SendAddGroupInviteClient",
+    "Handler": "ReceiveAddGroupInviteClient",
+    "SentBy": "Server",
+    "LegacyName": "tellAddGroupInvite",
+    "Parameters": "CSteamID newGroupID"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerQuests",
+    "SendHandle": "SendRemoveGroupInviteClient",
+    "Handler": "ReceiveRemoveGroupInviteClient",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "CSteamID newGroupID"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerQuests",
+    "SendHandle": "SendAddGroupInviteRequest",
+    "Handler": "ReceiveAddGroupInviteRequest",
+    "SentBy": "Client",
+    "LegacyName": "askAddGroupInvite",
+    "Parameters": "CSteamID targetID"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerQuests",
+    "SendHandle": "SendPromoteRequest",
+    "Handler": "ReceivePromoteRequest",
+    "SentBy": "Client",
+    "LegacyName": "askPromote",
+    "Parameters": "CSteamID targetID"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerQuests",
+    "SendHandle": "SendDemoteRequest",
+    "Handler": "ReceiveDemoteRequest",
+    "SentBy": "Client",
+    "LegacyName": "askDemote",
+    "Parameters": "CSteamID targetID"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerQuests",
+    "SendHandle": "SendKickFromGroup",
+    "Handler": "ReceiveKickFromGroup",
+    "SentBy": "Client",
+    "LegacyName": "askKickFromGroup",
+    "Parameters": "CSteamID targetID"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerQuests",
+    "SendHandle": "SendRenameGroupRequest",
+    "Handler": "ReceiveRenameGroupRequest",
+    "SentBy": "Client",
+    "LegacyName": "askRenameGroup",
+    "Parameters": "String newName"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerQuests",
+    "SendHandle": "SendSellToVendor",
+    "Handler": "ReceiveSellToVendor",
+    "SentBy": "Client",
+    "LegacyName": "askSellToVendor",
+    "Parameters": "ServerInvocationContext& context, UInt16 id, Byte index, Boolean asManyAsPossible"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerQuests",
+    "SendHandle": "SendBuyFromVendor",
+    "Handler": "ReceiveBuyFromVendor",
+    "SentBy": "Client",
+    "LegacyName": "askBuyFromVendor",
+    "Parameters": "ServerInvocationContext& context, UInt16 id, Byte index, Boolean asManyAsPossible"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerQuests",
+    "SendHandle": "SendSetFlag",
+    "Handler": "ReceiveSetFlag",
+    "SentBy": "Server",
+    "LegacyName": "tellSetFlag",
+    "Parameters": "UInt16 id, Int16 value"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerQuests",
+    "SendHandle": "SendRemoveFlag",
+    "Handler": "ReceiveRemoveFlag",
+    "SentBy": "Server",
+    "LegacyName": "tellRemoveFlag",
+    "Parameters": "UInt16 id"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerQuests",
+    "SendHandle": "SendAddQuest",
+    "Handler": "ReceiveAddQuest",
+    "SentBy": "Server",
+    "LegacyName": "tellAddQuest",
+    "Parameters": "UInt16 id"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerQuests",
+    "SendHandle": "SendRemoveQuest",
+    "Handler": "ReceiveRemoveQuest",
+    "SentBy": "Server",
+    "LegacyName": "tellRemoveQuest",
+    "Parameters": "UInt16 id"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerQuests",
+    "SendHandle": "SendTrackQuest",
+    "Handler": "ReceiveTrackQuest",
+    "SentBy": "Client",
+    "LegacyName": "askTrackQuest",
+    "Parameters": "UInt16 id"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerQuests",
+    "SendHandle": "SendAbandonQuest",
+    "Handler": "ReceiveAbandonQuest",
+    "SentBy": "Client",
+    "LegacyName": "askAbandonQuest",
+    "Parameters": "UInt16 id"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerQuests",
+    "SendHandle": "SendRegisterMessage",
+    "Handler": "ReceiveRegisterMessage",
+    "SentBy": "Client",
+    "LegacyName": "askRegisterMessage",
+    "Parameters": "UInt16 id"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerQuests",
+    "SendHandle": "SendRegisterResponse",
+    "Handler": "ReceiveRegisterResponse",
+    "SentBy": "Client",
+    "LegacyName": "askRegisterResponse",
+    "Parameters": "UInt16 id, Byte index"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerQuests",
+    "SendHandle": "SendQuests",
+    "Handler": "ReceiveQuests",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "ClientInvocationContext& context"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerSkills",
+    "SendHandle": "SendExperience",
+    "Handler": "ReceiveExperience",
+    "SentBy": "Server",
+    "LegacyName": "tellExperience",
+    "Parameters": "UInt32 newExperience"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerSkills",
+    "SendHandle": "SendReputation",
+    "Handler": "ReceiveReputation",
+    "SentBy": "Server",
+    "LegacyName": "tellReputation",
+    "Parameters": "Int32 newReputation"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerSkills",
+    "SendHandle": "SendBoost",
+    "Handler": "ReceiveBoost",
+    "SentBy": "Server",
+    "LegacyName": "tellBoost",
+    "Parameters": "EPlayerBoost newBoost"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerSkills",
+    "SendHandle": "SendSingleSkillLevel",
+    "Handler": "ReceiveSingleSkillLevel",
+    "SentBy": "Server",
+    "LegacyName": "tellSkill",
+    "Parameters": "Byte speciality, Byte index, Byte level"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerSkills",
+    "SendHandle": "SendUpgradeRequest",
+    "Handler": "ReceiveUpgradeRequest",
+    "SentBy": "Client",
+    "LegacyName": "askUpgrade",
+    "Parameters": "Byte speciality, Byte index, Boolean force"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerSkills",
+    "SendHandle": "SendBoostRequest",
+    "Handler": "ReceiveBoostRequest",
+    "SentBy": "Client",
+    "LegacyName": "askBoost",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerSkills",
+    "SendHandle": "SendPurchaseRequest",
+    "Handler": "ReceivePurchaseRequest",
+    "SentBy": "Client",
+    "LegacyName": "askPurchase",
+    "Parameters": "Byte index"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerSkills",
+    "SendHandle": "SendMultipleSkillLevels",
+    "Handler": "ReceiveMultipleSkillLevels",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "ClientInvocationContext& context"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerStance",
+    "SendHandle": "SendStance",
+    "Handler": "ReceiveStance",
+    "SentBy": "Server",
+    "LegacyName": "tellStance",
+    "Parameters": "EPlayerStance newStance"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerVoice",
+    "SendHandle": "SendVoiceChatRelay",
+    "Handler": "ReceiveVoiceChatRelay",
+    "SentBy": "Client",
+    "LegacyName": null,
+    "Parameters": "ServerInvocationContext& context"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.PlayerVoice",
+    "SendHandle": "SendPlayVoiceChat",
+    "Handler": "ReceivePlayVoiceChat",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "ClientInvocationContext& context"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.DamageTool",
+    "SendHandle": "SendSpawnBulletImpact",
+    "Handler": "ReceiveSpawnBulletImpact",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "Vector3 position, Vector3 normal, String materialName, Transform colliderTransform"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.DamageTool",
+    "SendHandle": "SendSpawnLegacyImpact",
+    "Handler": "ReceiveSpawnLegacyImpact",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "Vector3 position, Vector3 normal, String materialName, Transform colliderTransform"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.NPCEventManager",
+    "SendHandle": "SendBroadcast",
+    "Handler": "ReceiveBroadcast",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "Byte channelId, String eventId"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableArrestEnd",
+    "SendHandle": "SendPlayArrest",
+    "Handler": "ReceivePlayArrest",
+    "SentBy": "Server",
+    "LegacyName": "askArrest",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableArrestStart",
+    "SendHandle": "SendPlayArrest",
+    "Handler": "ReceivePlayArrest",
+    "SentBy": "Server",
+    "LegacyName": "askArrest",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableBarricade",
+    "SendHandle": "SendBarricadeVehicle",
+    "Handler": "ReceiveBarricadeVehicle",
+    "SentBy": "Client",
+    "LegacyName": "askBarricadeVehicle",
+    "Parameters": "Vector3 newPoint, Single newAngle_X, Single newAngle_Y, Single newAngle_Z, UInt16 plant"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableBarricade",
+    "SendHandle": "SendBarricadeNone",
+    "Handler": "ReceiveBarricadeNone",
+    "SentBy": "Client",
+    "LegacyName": "askBarricadeNone",
+    "Parameters": "Vector3 newPoint, Single newAngle_X, Single newAngle_Y, Single newAngle_Z"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableBarricade",
+    "SendHandle": "SendPlayBuild",
+    "Handler": "ReceivePlayBuild",
+    "SentBy": "Server",
+    "LegacyName": "askBuild",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableCarjack",
+    "SendHandle": "SendPlayPull",
+    "Handler": "ReceivePlayPull",
+    "SentBy": "Server",
+    "LegacyName": "askPull",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableCarlockpick",
+    "SendHandle": "SendPlayJimmy",
+    "Handler": "ReceivePlayJimmy",
+    "SentBy": "Server",
+    "LegacyName": "askJimmy",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableClothing",
+    "SendHandle": "SendPlayWear",
+    "Handler": "ReceivePlayWear",
+    "SentBy": "Server",
+    "LegacyName": "askWear",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableConsumeable",
+    "SendHandle": "SendPlayConsume",
+    "Handler": "ReceivePlayConsume",
+    "SentBy": "Server",
+    "LegacyName": "askConsume",
+    "Parameters": "EConsumeMode mode"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableDetonator",
+    "SendHandle": "SendPlayPlunge",
+    "Handler": "ReceivePlayPlunge",
+    "SentBy": "Server",
+    "LegacyName": "askPlunge",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableFilter",
+    "SendHandle": "SendPlayFilter",
+    "Handler": "ReceivePlayFilter",
+    "SentBy": "Server",
+    "LegacyName": "askFilter",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableFisher",
+    "SendHandle": "SendCatch",
+    "Handler": "ReceiveCatch",
+    "SentBy": "Client",
+    "LegacyName": "askCatch",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableFisher",
+    "SendHandle": "SendLuckTime",
+    "Handler": "ReceiveLuckTime",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "Single NewLuckTime"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableFisher",
+    "SendHandle": "SendPlayReel",
+    "Handler": "ReceivePlayReel",
+    "SentBy": "Server",
+    "LegacyName": "askReel",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableFisher",
+    "SendHandle": "SendPlayCast",
+    "Handler": "ReceivePlayCast",
+    "SentBy": "Server",
+    "LegacyName": "askCast",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableFuel",
+    "SendHandle": "SendPlayGlug",
+    "Handler": "ReceivePlayGlug",
+    "SentBy": "Server",
+    "LegacyName": "askGlug",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableGrower",
+    "SendHandle": "SendPlayGrow",
+    "Handler": "ReceivePlayGrow",
+    "SentBy": "Server",
+    "LegacyName": "askGrow",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableGun",
+    "SendHandle": "SendChangeFiremode",
+    "Handler": "ReceiveChangeFiremode",
+    "SentBy": "Client",
+    "LegacyName": "askFiremode",
+    "Parameters": "EFiremode newFiremode"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableGun",
+    "SendHandle": "SendPlayProject",
+    "Handler": "ReceivePlayProject",
+    "SentBy": "Server",
+    "LegacyName": "askProject",
+    "Parameters": "Vector3 origin, Vector3 direction, UInt16 barrelId, UInt16 magazineId"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableGun",
+    "SendHandle": "SendPlayShoot",
+    "Handler": "ReceivePlayShoot",
+    "SentBy": "Server",
+    "LegacyName": "askShoot",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableGun",
+    "SendHandle": "SendAttachSight",
+    "Handler": "ReceiveAttachSight",
+    "SentBy": "Client",
+    "LegacyName": "askAttachSight",
+    "Parameters": "Byte page, Byte x, Byte y, Byte[] hash"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableGun",
+    "SendHandle": "SendAttachTactical",
+    "Handler": "ReceiveAttachTactical",
+    "SentBy": "Client",
+    "LegacyName": "askAttachTactical",
+    "Parameters": "Byte page, Byte x, Byte y, Byte[] hash"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableGun",
+    "SendHandle": "SendAttachGrip",
+    "Handler": "ReceiveAttachGrip",
+    "SentBy": "Client",
+    "LegacyName": "askAttachGrip",
+    "Parameters": "Byte page, Byte x, Byte y, Byte[] hash"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableGun",
+    "SendHandle": "SendAttachBarrel",
+    "Handler": "ReceiveAttachBarrel",
+    "SentBy": "Client",
+    "LegacyName": "askAttachBarrel",
+    "Parameters": "Byte page, Byte x, Byte y, Byte[] hash"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableGun",
+    "SendHandle": "SendAttachMagazine",
+    "Handler": "ReceiveAttachMagazine",
+    "SentBy": "Client",
+    "LegacyName": "askAttachMagazine",
+    "Parameters": "Byte page, Byte x, Byte y, Byte[] hash"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableGun",
+    "SendHandle": "SendPlayReload",
+    "Handler": "ReceivePlayReload",
+    "SentBy": "Server",
+    "LegacyName": "askReload",
+    "Parameters": "Boolean newHammer"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableGun",
+    "SendHandle": "SendPlayChamberJammed",
+    "Handler": "ReceivePlayChamberJammed",
+    "SentBy": "Server",
+    "LegacyName": "askPlayChamberJammed",
+    "Parameters": "Byte correctedAmmo"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableGun",
+    "SendHandle": "SendPlayAimStart",
+    "Handler": "ReceivePlayAimStart",
+    "SentBy": "Server",
+    "LegacyName": "askAimStart",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableGun",
+    "SendHandle": "SendPlayAimStop",
+    "Handler": "ReceivePlayAimStop",
+    "SentBy": "Server",
+    "LegacyName": "askAimStop",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableMelee",
+    "SendHandle": "SendSpawnMeleeImpact",
+    "Handler": "ReceiveSpawnMeleeImpact",
+    "SentBy": "Server",
+    "LegacyName": null,
+    "Parameters": "Vector3 position, Vector3 normal, String materialName, Transform colliderTransform"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableMelee",
+    "SendHandle": "SendInteractMelee",
+    "Handler": "ReceiveInteractMelee",
+    "SentBy": "Client",
+    "LegacyName": "askInteractMelee",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableMelee",
+    "SendHandle": "SendPlaySwingStart",
+    "Handler": "ReceivePlaySwingStart",
+    "SentBy": "Server",
+    "LegacyName": "askSwingStart",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableMelee",
+    "SendHandle": "SendPlaySwingStop",
+    "Handler": "ReceivePlaySwingStop",
+    "SentBy": "Server",
+    "LegacyName": "askSwingStop",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableMelee",
+    "SendHandle": "SendPlaySwing",
+    "Handler": "ReceivePlaySwing",
+    "SentBy": "Server",
+    "LegacyName": "askSwing",
+    "Parameters": "ESwingMode mode"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableRefill",
+    "SendHandle": "SendPlayUse",
+    "Handler": "ReceivePlayUse",
+    "SentBy": "Server",
+    "LegacyName": "askUse",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableRefill",
+    "SendHandle": "SendPlayRefill",
+    "Handler": "ReceivePlayRefill",
+    "SentBy": "Server",
+    "LegacyName": "askRefill",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableStructure",
+    "SendHandle": "SendBuildStructure",
+    "Handler": "ReceiveBuildStructure",
+    "SentBy": "Client",
+    "LegacyName": "askStructure",
+    "Parameters": "Vector3 newPoint, Single newAngle"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableStructure",
+    "SendHandle": "SendPlayConstruct",
+    "Handler": "ReceivePlayConstruct",
+    "SentBy": "Server",
+    "LegacyName": "askConstruct",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableThrowable",
+    "SendHandle": "SendToss",
+    "Handler": "ReceiveToss",
+    "SentBy": "Server",
+    "LegacyName": "askToss",
+    "Parameters": "Vector3 origin, Vector3 force"
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableThrowable",
+    "SendHandle": "SendPlaySwing",
+    "Handler": "ReceivePlaySwing",
+    "SentBy": "Server",
+    "LegacyName": "askSwing",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableTire",
+    "SendHandle": "SendPlayAttach",
+    "Handler": "ReceivePlayAttach",
+    "SentBy": "Server",
+    "LegacyName": "askAttach",
+    "Parameters": ""
+  },
+  {
+    "DeclaringType": "SDG.Unturned.UseableVehicleBattery",
+    "SendHandle": "SendPlayReplace",
+    "Handler": "ReceivePlayReplace",
+    "SentBy": "Server",
+    "LegacyName": "askReplace",
+    "Parameters": ""
+  }
+]
